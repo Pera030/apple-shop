@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins:400,700&display=swap');
+:root {
+    --gray1: #515365;
+    --gray2: #4e5062;
+    --gray3: #4b4d5e;
+    --gray4: #484a5a;
+    --purple: rgb(110, 37, 148);
+    --yellow: #ecd444;
+    --white: #fff;
+    --text: #444;
+    --transition:.4s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/**************
+Navigation
+**************/
+
+nav {
+    background-image: linear-gradient(to right,rgb(110, 37, 148),#ecd444);
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+}
+
+nav .logo {
+    color: var(--white);
+    margin: 0 30px;
+    font-size: 2rem;
+}
+
+nav .logo:hover {
+    color: var(--yellow);
+    transition: var(--transition);
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav ul li i {
+    font-size: 2rem;
+    position: relative;
+    top: 5px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--purple);
+    transition: var(--transition);
+} 
+
+/************
+Header
+************/
+
+header {
+    background-image:linear-gradient(rgba(110, 37, 148,.9),rgba(110, 37, 148,.9)),url(img/header3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 220px 0;
+    
+}
+
+header h1 {
+    padding: 0px 0 20px 0;
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header h1::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    background-color: var(--yellow);
+    margin: 20px auto;
+}
+
+header h4 {
+    font-size: 1.4rem;
+    color: var(--white);
+    padding-bottom: 20px;
+}
+
+header button {
+    font-size: 1.2rem;
+    background-color: var(--white);
+    padding: 15px 30px;
+    border: none;
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
+header button:hover {
+    background-color: var(--yellow);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+/**********
+About
+**********/
+
+.about {
+    color: var(--white);
+}
+
+.about .row article {
+    float: left;
+    width: 50%;
+    padding: 50px 60px 60px 60px;
+}
+
+.about .row:first-child article:nth-child(1) {
+    background-color: var(--gray1);
+}
+
+.about .row:first-child article:nth-child(2) {
+    background-color: var(--gray2);
+}
+
+.about .row:nth-child(2) article:nth-child(1) {
+    background-color: var(--gray3);
+}
+
+.about .row:nth-child(2) article:nth-child(2) {
+    background-color: var(--gray4);
+}
+
+.about .row article i {
+    color: var(--yellow);
+    font-size: 3rem;
+}
+
+.about .row article h2 {
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+.about .row article p {
+    margin-bottom: 40px;
+}
+
+.about .row article button {
+    background-color: transparent;
+    color: var(--yellow);
+    padding: 15px 30px;
+    border: 2px solid var(--yellow);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.about .row article button:hover {
+    background-color: var(--yellow);
+    color: var(--purple);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+/*************
+Product
+*************/
+
+.cf {
+    clear: both;
+    border-bottom: 2px solid lightgray;
+}
+
+.product .row1 article:nth-child(1) {
+    float: left;
+    width: 40%;
+    height: 50vh;
+    background-image: url(img/mac.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.product .row1 article:nth-child(2) {
+    float: right;
+    width: 60%;
+    padding: 7%;
+    height: 50vh;
+}
+
+.product .row1 article:nth-child(2) h3 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.product .row1 article:nth-child(2) h3::after {
+    content: "";
+    display: block;
+    background-color: var(--text);
+    width: 80px;
+    height: 4px;
+    margin: 20px 0;
+}
+
+.product .row2 article:nth-child(2) {
+    float: right;
+    width: 40%;
+    height: 50vh;
+    background-image: url(img/ipad.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.product .row2 article:nth-child(1) {
+    float: left;
+    width: 60%;
+    padding: 7%;
+    height: 50vh;
+}
+
+.product .row2 article:nth-child(1) h3 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.product .row2 article:nth-child(1) h3::after {
+    content: "";
+    display: block;
+    background-color: var(--text);
+    width: 80px;
+    height: 4px;
+    margin: 20px 0;
+}
+
+.product .row3 article:nth-child(1) {
+    float: left;
+    width: 40%;
+    height: 50vh;
+    background-image: url(img/iphone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.product .row3 article:nth-child(2) {
+    float: right;
+    width: 60%;
+    padding: 7%;
+    height: 50vh;
+}
+
+.product .row3 article:nth-child(2) h3 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.product .row3 article:nth-child(2) h3::after {
+    content: "";
+    display: block;
+    background-color: var(--text);
+    width: 80px;
+    height: 4px;
+    margin: 20px 0;
+}
+
+/***********
+Contact
+***********/
+
+.contact {
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 70px 0;
+}
+
+.contact h2 {
+    font-size: 3rem;
+}
+
+.contact h2::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    background-color: var(--text);
+    margin: 20px auto 40px auto;
+}
+
+.contact p {
+    padding-bottom: 20px;
+}
+
+.contact button {
+    background-color: var(--purple);
+    padding: 15px 30px;
+    border: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.contact button:hover {
+    background-color: var(--text);
+    transition: var(--transition);
+}
+
+/*********
+Footer
+*********/
+
+footer {
+    background-color: var(--text);
+    color: var(--white);
+    overflow: hidden;
+}
+
+footer article:nth-child(1) {
+    float: left;
+    width: 60%;
+    padding: 60px 140px 60px 60px;
+}
+
+footer article:nth-child(1) p {
+    padding-bottom: 20px;
+}
+
+footer article:nth-child(1) button {
+    background-color: transparent;
+    color: var(--yellow);
+    padding: 15px 30px;
+    border: 2px solid var(--yellow);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+footer article:nth-child(1) button:hover {
+    background-color: var(--yellow);
+    color: var(--purple);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+footer article:nth-child(1) h3,
+footer article:nth-child(2) h3 {
+    font-size: 1.4rem;
+}
+
+footer article:nth-child(1) h3::after,
+footer article:nth-child(2) h3::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    background-color: var(--yellow);
+    margin: 20px 0 40px 0;
+}
+
+footer article:nth-child(2) {
+    float: right;
+    width: 40%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+footer article:nth-child(2) ul {
+    list-style: none;
+    line-height: 2;
+}
+
+footer article:nth-child(2) a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/*************
+Responsive
+*************/
+@media(max-width:768px){
+    nav {
+        background-image: linear-gradient(to right,rgb(110, 37, 148),#ecd444);
+        text-align: center;
+        height: 380px;
+    }
+    
+    nav ul {
+        display: block;
+    }
+    
+    nav ul li {
+        display: block;
+    }
+    
+    nav ul li:hover {
+        background-color: var(--text);
+    }
+    
+    header {
+        padding: 100px 0;
+    }
+    
+    .about .row article {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .product .row1 article:nth-child(1),
+    .product .row1 article:nth-child(2)
+     {
+        width: 100%;
+        float: none;
+        height: 350px;
+    }
+    
+    .product .row2 article:nth-child(1),
+    .product .row2 article:nth-child(2)
+     {
+        width: 100%;
+        float: none;
+        height: 350px;
+    }
+    
+    .product .row3 article:nth-child(1),
+    .product .row3 article:nth-child(2)
+     {
+        width: 100%;
+        float: none;
+        height: 350px;
+    }
+    
+    .contact {
+        background-color: var(--yellow);
+        text-align: center;
+        padding: 70px 20px;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer article:nth-child(1) {
+        float: none;
+        width: 100%;
+        padding: 30px;
+    }
+    
+    footer article:nth-child(2) {
+        float: none;
+        width: 100%;
+        padding: 30px;
+    }
+    
+    footer article:nth-child(1) h3::after,
+    footer article:nth-child(2) h3::after {
+        margin: 20px auto 40px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
